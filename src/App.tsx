@@ -1,9 +1,9 @@
+import Dashboard from "@x100/Dashboard"
+
 function App() {
   return (
     <>
-      <div>
-        rifamax
-      </div>
+      <Dashboard />
     </>
   )
 }
