@@ -1,3 +1,4 @@
+// themeSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface ThemeState {
@@ -5,7 +6,7 @@ interface ThemeState {
 }
 
 const initialState: ThemeState = {
-  mode: localStorage.getItem('theme') as 'light' | 'dark' || 'light',
+  mode: (localStorage.getItem('theme') as 'light' | 'dark') || 'light',
 };
 
 export const themeSlice = createSlice({

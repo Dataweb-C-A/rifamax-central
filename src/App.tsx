@@ -1,9 +1,9 @@
-import Dashboard from "@x100/Dashboard"
+import Login from "@modules/Login"
 
 function App() {
   return (
     <>
-      <Dashboard />
+      <Login />
     </>
   )
 }

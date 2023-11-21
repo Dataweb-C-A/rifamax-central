@@ -51,6 +51,10 @@ export default defineConfig({
       {
         find: '@reducers',
         replacement: path.resolve(path.join(__dirname, 'src/reducers'))
+      },
+      {
+        find: '@store',
+        replacement: path.resolve(path.join(__dirname, 'src/store.ts'))
       }
     ]
   }

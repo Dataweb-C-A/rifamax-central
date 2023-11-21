@@ -16,7 +16,8 @@
       "@rifamax/*": ["./src/modules/rifamax/*"],
       "@x100/*": ["./src/modules/x100/*"],
       "@reducers/*": ["./src/reducers/*"],
-      "@modules/*": ["./src/modules/*"]
+      "@modules/*": ["./src/modules/*"],
+      "@store": ["./src/store.ts"]
     },
 
     /* Bundler mode */
