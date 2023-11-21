@@ -4,7 +4,9 @@ interface INavbar {
 
 function Navbar({ module }: INavbar) {
   return (
-    <div>{ module }</div>
+    <>
+    
+    </>
   )
 }
 

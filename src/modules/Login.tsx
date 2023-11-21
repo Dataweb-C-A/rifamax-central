@@ -17,7 +17,7 @@ function Login({}: Props) {
   return (
     <Container>
       <Group mt='15vh' position='center'>
-        <Card withBorder w={450}>
+        <Card radius='lg' withBorder w={450}>
           <Image src={RifamaxLogo} alt='Rifamax' style={{ margin: '0 auto' }} />
           <TextInput
             label='Correo'
@@ -40,7 +40,7 @@ function Login({}: Props) {
           </Group>
           <Group>
             <Button fullWidth radius='md'>
-              Login
+              Iniciar Sesion
             </Button>
             <ThemeSwitcher />
           </Group>
