@@ -1,6 +1,4 @@
 import {
-  TextInput,
-  PasswordInput,
   ScrollArea,
   Flex,
   Image,
@@ -15,7 +13,8 @@ import {
 import RifamaxLogo from '@assets/images/rifamax-logo.png';
 import ThemeSwitcher from '@components/ThemeSwitcher';
 import { FaHome } from "react-icons/fa";
-import { IconUserFilled, IconUserSquare, IconArrowBigRightFilled } from '@tabler/icons-react';
+import { FaUsers } from "react-icons/fa"
+import { IconUserFilled, IconUserSquare, IconArrowBigRightFilled ,IconUsersGroup } from '@tabler/icons-react';
 import { BsBuilding, BsJoystick } from "react-icons/bs";
 import { BiMoney } from "react-icons/bi";
 import { MdAttachMoney } from "react-icons/md";
@@ -32,9 +31,60 @@ function Navbar({ module }: INavbar) {
 
   return (
     <>
-     <Drawer withCloseButton={false} opened={drawerOpened} onClose={closeDrawer} >
-        
+      <Drawer size={350} withCloseButton={false} opened={drawerOpened} onClose={closeDrawer} >
+
+        <Image maw={240} mx="auto" src={RifamaxLogo} alt='Rifamax' />
+
+        <Divider my="sm" variant="dotted" />
+        <ScrollArea mt={75} h="40vh">
+
+          <Flex
+            mih={50}
+            gap="xl"
+            justify="flex-start"
+            align="center"
+            direction="column"
+            wrap="wrap"
+          >
+
+            <Group>
+
+              <FaHome size={20} />
+              Lobby
+            </Group>
+
+            <Group>
+
+              <BsBuilding size={20} />
+              Reportes
+            </Group>
+            <Group>
+
+              <BsJoystick size={20} />
+              Juegos
+            </Group>
+            <Group>
+
+              <BiMoney size={20} />
+              Monedas
+            </Group>
+            <Group>
+              <MdAttachMoney size={20} />
+              Cuadre
+            </Group>
+
+
+          </Flex>
+        </ScrollArea>
+        <Divider my="sm" variant="dotted" />
+        <Group position='apart'>
+
+        <FaUsers size={20}/>
+          <IconUserFilled size={20}/>
+          <ThemeSwitcher />
+        </Group>
       </Drawer>
+
       <Modal
         opened={modalOpened}
         onClose={closeModal}
@@ -102,11 +152,11 @@ function Navbar({ module }: INavbar) {
           <ThemeSwitcher />
 
           <IconUserFilled
-        style={{ cursor: 'pointer' }}
-        onClick={openModal}
-        size={20}
-      />
-          <IconArrowBigRightFilled onClick={openDrawer}  size={20} />
+            style={{ cursor: 'pointer' }}
+            onClick={openModal}
+            size={20}
+          />
+          <IconArrowBigRightFilled onClick={openDrawer} size={20} />
         </Flex>
 
       </Card>
