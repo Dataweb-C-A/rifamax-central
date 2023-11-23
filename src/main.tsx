@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 import { MantineProvider } from '@mantine/core';
 import { Provider, useSelector } from 'react-redux';
 import { store, RootState } from '@store';
@@ -40,7 +41,9 @@ function ThemeProvider() {
 function Main() {
   return (
     <Provider store={store}>
-      <ThemeProvider />
+      <BrowserRouter>
+        <ThemeProvider />
+      </BrowserRouter>
     </Provider>
   );
 }

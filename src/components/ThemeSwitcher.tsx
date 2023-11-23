@@ -15,13 +15,13 @@ function ThemeSwitcher({ style }: ThemeSwitcherProps) {
     <div style={style}>
       {mode === 'light' ? (
         <BsFillSunFill
-          size={22}
+          size={20}
           style={{ cursor: 'pointer' }}
           onClick={() => dispatch(setThemeMode('dark'))}
         />
       ) : (
         <BsFillMoonFill
-          size={21}
+          size={20}
           style={{ cursor: 'pointer' }}
           onClick={() => dispatch(setThemeMode('light'))}
         />

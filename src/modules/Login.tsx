@@ -9,7 +9,6 @@ import {
   Card,
 } from '@mantine/core';
 import RifamaxLogo from '@assets/images/rifamax-logo.png';
-import ThemeSwitcher from '@components/ThemeSwitcher';
 
 type Props = {};
 
@@ -42,7 +41,7 @@ function Login({}: Props) {
             <Button fullWidth radius='md'>
               Iniciar Sesion
             </Button>
-            <ThemeSwitcher />
+          
           </Group>
         </Card>
       </Group>
